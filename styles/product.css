@@ -17,10 +17,6 @@
   width: 220px;
 }
 
-.food {
-  overflow-x: hidden;
-}
-
 .food .slide {
   text-align: center;
   padding: 3rem 2rem;
@@ -195,11 +191,6 @@
   resize: none;
 }
 
-.order form .box-contained .box .inputBox .map {
-  height: 18remrem;
-  width: 100%;
-}
-
 .order form .box-contained .box .inputBox span {
   color: var(--gold-crayola);
   text-transform: capitalize;
@@ -247,6 +238,8 @@
   font-size: 1em;
   padding: 1em 0;
   line-height: 2;
+  display: flex;
+  width: 100%;
 }
 
 .page .page-content .icon-container {
@@ -266,6 +259,15 @@
 .page .page-content .icon-container .icons img {
   height: 4rem;
 }
+@media screen and (max-width: 400px) {
+  .page .page-content .icon-container .icon-last {
+    display: none;
+  }
+
+  .order {
+    padding: 1em 0.3rem;
+  }
+}
 
 @media screen and (max-width: 785px) {
   .food {
@@ -274,14 +276,14 @@
   }
 
   .order {
-    padding: 1em 0.2rem;
+    padding: 1em 0.4rem;
+  }
+
+  .page {
+    padding: 1rem 1rem;
   }
 }
 @media screen and (max-width: 1245px) {
-  .order {
-    padding: 1em 4em;
-  }
-
   .order form .box-contained .box {
     flex: 1 1 21rem;
   }

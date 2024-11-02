@@ -53,6 +53,7 @@ closeButton.addEventListener("click", function () {
 });
 
 //card swiper
+/*
 let swiperCards = new Swiper(".card-content", {
   loop: true,
   spaceBetween: 32,
@@ -79,10 +80,10 @@ let swiperCards = new Swiper(".card-content", {
       slidesPerView: 4,
     },
   },
-});
+});    */
 
 //swiper main
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".hero-slider", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

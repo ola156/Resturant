@@ -99,3 +99,9 @@ body {
     fill: white;
   }
 }
+
+@media (max-width: 400px) {
+  .logo-name {
+    font-size: 15px;
+  }
+}

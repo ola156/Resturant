@@ -188,10 +188,6 @@ review
   }
 }
 
-@media (max-width: 600px) {
-  #events .event-carousel {
-  }
-}
 @media (width > 880px) {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
@@ -203,5 +199,19 @@ review
 
   .footer-socials {
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 450px) {
+  #events {
+    padding: 1em 0.4em;
+  }
+
+  .review {
+    padding: 2rem 0.4em;
+  }
+
+  .footer {
+    padding: 4em 1em;
   }
 }
