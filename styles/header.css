@@ -311,7 +311,7 @@ header {
 }
 @media (max-width: 450px) {
   #navbar.fixed .logo {
-    font-size: 1.5rem;
+    font-size: 0.5em;
   }
 }
 @media (max-width: 992px) {
