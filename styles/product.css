@@ -17,6 +17,10 @@
   width: 220px;
 }
 
+.food {
+  overflow-x: hidden;
+}
+
 .food .slide {
   text-align: center;
   padding: 3rem 2rem;

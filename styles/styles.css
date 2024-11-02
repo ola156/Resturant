@@ -29,7 +29,8 @@
 body {
   font-family: "Arima", Roboto;
   background-color: black;
-  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 .containers {
   background-color: var(--black);

@@ -190,7 +190,6 @@ review
 
 @media (max-width: 600px) {
   #events .event-carousel {
-    display: block;
   }
 }
 @media (width > 880px) {
