@@ -1,0 +1,328 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*-------------------
+----------------
+-----------
+ Header top
+-------------
+--------------------------*/
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(127, 127, 128, 0.247);
+}
+
+.top-left {
+  flex: 1;
+}
+
+.top-nav .top-left img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 12px;
+  padding: 1px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.top-nav .top-left img:hover {
+  width: 45px;
+}
+.top-right {
+  width: 200px;
+}
+
+.top-right .flexitem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-nav ul li a {
+  color: white;
+  font-size: 1em;
+  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.top-nav ul li a:hover {
+  font-weight: 100;
+  color: var(--gold-crayola);
+}
+.top-nav ul ul {
+  position: absolute;
+  line-height: 2em;
+  background-color: rgb(66, 66, 66);
+
+  border: 1px solid var(--gold-crayola);
+
+  padding: 0 0.3em;
+  display: none;
+}
+.top-nav ul ul li a {
+  border-bottom: 1px solid gray;
+  color: white;
+}
+
+.top-nav .top-right button {
+  padding: 0.5em;
+}
+
+.top-nav .icon-top {
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+
+.top-nav .icon-top a {
+  padding-left: 15px;
+  color: var(--gold-crayola);
+  cursor: pointer;
+}
+
+.top-nav .icon-top a:hover {
+  color: white;
+  font-size: 1.6em;
+}
+
+.top-nav li:hover ul {
+  display: block;
+}
+
+.icon-nav {
+  color: var(--gold-crayola);
+}
+
+/*--------
+---
+header-main
+----------
+------*/
+
+.navbar ul li a {
+  color: white;
+}
+
+#navbar.fixed {
+  padding: 0 4.5rem;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  border-radius: 0;
+  height: 4rem;
+  background-color: var(--eerie-black-2);
+}
+
+header {
+  position: absolute;
+  padding: 0 2rem;
+  width: 100%;
+  z-index: 10;
+  margin-top: 80px;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-size: 1.8em;
+  color: var(--gold-crayola);
+  font-weight: bold;
+}
+
+.navbar .logo a:hover {
+  font-size: 2em;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar .links a:hover {
+  border: 1px solid var(--gold-crayola);
+  padding: 0.4em 1em;
+}
+.navbar .toggle-btn {
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-size: 1.2em;
+}
+.navbar .toggle-btn:hover {
+  font-size: 1.3em;
+  color: var(--gold-crayola);
+}
+
+.primary-button,
+.p-button {
+  background-color: var(--gold-crayola);
+  color: black;
+  border: none;
+  padding: 0.5em 1em;
+  outline: none;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: scale 0.2s ease;
+}
+
+.primary-button:hover,
+.p-button:hover {
+  scale: 1.05;
+}
+.primary-button:active,
+.p-button:active {
+  scale: 0.95;
+}
+
+/*-------------
+-------------
+--dropdown-----
+---------*/
+.dropdown-menu {
+  position: absolute;
+  right: 2em;
+  left: 0;
+  top: -38px;
+  display: none;
+  width: 310px;
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.4s, visibility 0.4s;
+  will-change: transform, visibility;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 200;
+}
+.showmenu .dropdown-menu {
+  visibility: inherit;
+  opacity: 1;
+}
+
+.dropdown-menu .logos {
+  padding: 0.7em 1em;
+  font-size: 1.5em;
+}
+
+.dropdown-menu .logos a {
+  color: var(--gold-crayola);
+}
+.dropdown-menu li {
+  padding: 0.2em;
+}
+.dropdown-menu li a {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu .icon-large {
+  padding: 0px 12px;
+}
+.dropdown-menu .drop-2 li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .drop .separator {
+  border-bottom: 1px solid var(--gold-crayola);
+}
+
+.drop-2 .visit {
+  margin: 0.5em 0;
+  letter-spacing: 4px;
+}
+
+.drop-2 li {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-2 .add {
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drop-2 .mail a:hover {
+  color: var(--gold-crayola);
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown-menu .drop a:hover {
+  color: var(--gold-crayola);
+  font-size: 1.3em;
+}
+
+.dropdown-menu .p-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding: 0.25em;
+}
+
+.dropdown-menu .t-close {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+
+.dropdown-menu .t-close i:hover {
+  border: 1px solid var(--gold-crayola);
+  padding: 0px 0px;
+}
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .primary-button {
+    display: none;
+  }
+
+  .navbar .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,100 @@
+:root {
+  --gold-crayola: hsl(38, 94%, 69%);
+  --quick-silver: hsla(0, 0%, 65%, 1);
+  --davys-grey: hsla(30, 3%, 34%, 1);
+  --smoky-black-1: hsla(40, 12%, 5%, 1);
+  --smoky-black-2: hsla(30, 8%, 5%, 1);
+  --smoky-black-3: hsla(0, 3%, 7%, 1);
+  --eerie-black-1: hsla(210, 4%, 9%, 1);
+  --eerie-black-2: hsla(210, 4%, 11%, 1);
+  --eerie-black-3: hsla(180, 2%, 8%, 1);
+  --eerie-black-4: hsla(0, 0%, 13%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+  --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+  --black: hsla(0, 0%, 0%, 1);
+  --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+  --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+  --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+  --transition-3: 1000ms ease;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arima", Roboto;
+  background-color: black;
+  overflow-x: hidden;
+}
+.containers {
+  background-color: var(--black);
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%, -50%);
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.loader-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#load {
+  width: 120px;
+  margin-bottom: 3px;
+  animation: animateOne -0.5s linear 1.5s infinite alternate;
+}
+.logo-name {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  animation: animateTwo -0.5s linear 1.5s infinite alternate;
+}
+
+@keyframes animateOne {
+  0% {
+    opacity: 0;
+    fill: black;
+  }
+  100% {
+    opacity: 1;
+    fill: white;
+  }
+}
+
+@keyframes animateTwo {
+  0% {
+    opacity: 0;
+    fill: black;
+  }
+  100% {
+    opacity: 1;
+    fill: white;
+  }
+}
