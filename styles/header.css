@@ -121,6 +121,7 @@ header-main
 
 #navbar.fixed {
   padding: 0 4.5rem;
+
   margin: 0;
   position: fixed;
   top: 0;
@@ -308,7 +309,11 @@ header {
   border: 1px solid var(--gold-crayola);
   padding: 0px 0px;
 }
-
+@media (max-width: 450px) {
+  #navbar.fixed .logo {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 992px) {
   .navbar .links,
   .navbar .primary-button {
