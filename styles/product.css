@@ -16,7 +16,9 @@
 .heading img {
   width: 220px;
 }
-
+.food {
+  position: relative;
+}
 .food .slide {
   text-align: center;
   padding: 3rem 2rem;
@@ -115,8 +117,8 @@
   font-size: 2em;
   font-weight: 700;
   position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
+  top: 4.5rem;
+  right: 1.5rem;
 }
 #close-preview:hover {
   transform: rotate(90deg);
