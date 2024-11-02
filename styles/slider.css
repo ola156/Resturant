@@ -1,20 +1,20 @@
 .swiper.main {
   height: 700px;
-
+  width: 100%;
   .swiper-slide.main {
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    object-fit: cover;
+    object-fit: contain;
+    background-position: center;
   }
 }
 
 .slide-1 {
   background-image: url("../images/hero-slider-1.jpg");
   transition: scale 0.2s ease;
-  object-fit: contain;
 }
 .slide-2 {
   background-image: url("../images/hero-slider-2.jpg");
