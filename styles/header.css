@@ -310,6 +310,9 @@ header {
   padding: 0px 0px;
 }
 @media (max-width: 600px) {
+  #navbar.fixed {
+    left: 0;
+  }
   #navbar.fixed .logo {
     font-size: 0.7rem;
   }
